@@ -49,9 +49,8 @@ Examples:
 */
 
 function hasNoDuplicates(arr) {
-    console.log(arr, arr.length);
     return arr.every((item, i) => {
-        console.log(item, i);
+        return arr.indexOf(item) === i;
     })
 }
 
